@@ -103,3 +103,4 @@ resource "aws_route_table_association" "abc-rta-public-subnet-02" {
   subnet_id = aws_subnet.abc-public-subnet-02.id 
   route_table_id = aws_route_table.abc-public-rt.id   
 }
+
