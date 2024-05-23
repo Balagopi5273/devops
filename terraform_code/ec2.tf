@@ -22,7 +22,7 @@ resource "aws_security_group" "demo-sg" {
   vpc_id = aws_vpc.abc-vpc.id 
   
   ingress {
-    description      = "SHH access"
+    description      = "SsH access"
     from_port        = 22
     to_port          = 22
     protocol         = "tcp"
