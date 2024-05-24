@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "demo-server" {
-    ami = "ami-0bb84b8ffd87024d8"
+    ami = "ami-04b70fa74e45c3917"
     instance_type = "t2.medium"
     key_name = "abc"
     //security_groups = [ "demo-sg" ]
@@ -22,7 +22,7 @@ resource "aws_security_group" "demo-sg" {
   vpc_id = aws_vpc.abc-vpc.id 
   
   ingress {
-    description      = "SsH access"
+    description      = "SHH access"
     from_port        = 22
     to_port          = 22
     protocol         = "tcp"
